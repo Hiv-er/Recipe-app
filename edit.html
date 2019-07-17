@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Recipe App</title>
+        <link href="styles/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="inner-header">
+            <div class="container">
+                <h1>Recipe App</h1>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <form class="recipe-form">
+                    <fieldset>
+                        <input class="recipe-title" name="title" type="text" placeholder="Recipe title">
+                        <textarea class="recipe-steps" name="steps" placeholder="Recipe steps"></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <legend class="ingredients-header">Ingredients</legend>
+                        <ul class="ingredients-list">
+                        </ul>
+                        <div class="add-ingredient-container">
+                            <input type="text" class="add-ingredient-input">
+                            <button class="button add-ingredient-button btn-display">Add ingredient</button>
+                        </div>
+                    </fieldset>
+                    <hr>
+                    <div class="buttons-container">
+                        <a class="button btn-display" href="index.html">Back</a>
+                        <button class="button add-recipe btn-display" type="submit">Add recipe</button>
+                        <button class="button save-recipe" type="submit">Save changes</button>
+                        <button class="button delete-recipe">Delete recipe</button>
+                    </div>
+                </form>
+
+            </div>
+            <script src="scripts/recipes-functions.js"></script>
+            <script src="scripts/edit.js"></script>
+        </main>
+    </body>
+</html>
